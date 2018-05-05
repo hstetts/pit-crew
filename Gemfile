@@ -37,6 +37,8 @@ gem 'thor', '0.19.1'
 
 gem 'bootstrap-sass'
 
+gem 'material_design_lite-sass'
+
 group :development do
  gem 'listen', '~> 3.0.5'
 end
