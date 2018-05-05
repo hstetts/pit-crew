@@ -1,3 +1,9 @@
+GIT
+  remote: git@github.com:nurdymuny/calendly-ruby.git
+  revision: fc3d6d0cbf0603ce03cae6ba7837aafffe05b5fd
+  specs:
+    calendly (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -158,6 +164,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  calendly!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
