@@ -1,0 +1,22 @@
+<div class="mdl-layout__content">
+<section class="section--center mdl-grid mdl-shadow--2dp" id:"appointment">
+
+      <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <h1 class="mdl-typography--font-light"> New Customer </h1>
+
+      <div class="form-group">
+      <%= form_for @user, url: wizard_path do |f| %>
+          <%= f.label :email %>
+          <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>
+
+          <%= f.label :existing_customer, class: 'checkbox' do %>
+            <%= f.check_box :existing_customer %> Existing Customer?
+
+          <%= f.submit "Continue", class: 'btn btn-primary' %>
+          <% end %>
+      <% end %>
+    </div>
+    <%= link_to 'skip', next_wizard_path %>
+    </div>
+  </div>
+</section>

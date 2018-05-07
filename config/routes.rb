@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
+  root 'welcome#home'
+
   resources :users, only: [:new, :create]
+
+  resources :multistep_form
+  
 
   get 'welcome/home'
 
@@ -12,9 +17,5 @@ Rails.application.routes.draw do
 
   get 'welcome/FAQ'
 
-  root 'welcome#home'
 
-
-
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -17,12 +17,15 @@ class UsersController < ApplicationController
     @user.address_type= params[:user][:address_type]
     @user.preferred_contact = params[:user][:preferred_contact]
     @user.marketing_opt = params[:user][:marketing_opt]
+    @user.email = params[:user][:email]
+    @user.existing_customer = params[:user][:existing_customer]
 
     if @user.save
-      flash[:success] = "User Added to Databse!"
+      flash[:success] = "User Added to Database!"
       redirect_to @user
     else
       render 'new'
     end
   end
+
 end
