@@ -1,0 +1,48 @@
+<div class="mdl-layout__content">
+<section class="section--center mdl-grid mdl-shadow--2dp">
+
+      <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <h1 class="mdl-typography--font-light"> Personal Info </h1>
+
+      <div class="form-group">
+      <%= form_for @user do |f| %>
+          <%= f.label :first_name %>:
+          <%= f.text_field :first_name, autofocus: true, class: 'form-control', placeholder: "Enter name" %>
+
+          <%= f.label :last_name %>:
+          <%= f.text_field :last_name, class: 'form-control'%>
+
+          <%= f.label :phone_number %>
+          <%= f.phone_field :phone_number, class: 'form-control'%>
+
+          <%= f.label :phone_type %>
+          <%= f.select :phone_type,
+              options_for_select(["Cell", "Work"]), class: 'form-control' %>
+
+          <%= f.label :address%>
+          <%= f.text_field :address, class: 'form-control'%>
+
+          <%= f.label :city  %>
+          <%= f.text_field :city, class: 'form-control'%>
+
+          <%= f.label :state%>
+          <%= f.text_field :state, class: 'form-control'%>
+
+          <%= f.label :zip_code%>
+          <%= f.text_field :zip_code, class: 'form-control'%>
+
+          <%= f.label :address_type%>
+          <%= f.text_field :address_type, class: 'form-control'%>
+
+          <%= f.label :preferred_contact   %>
+          <%= f.check_box :preferred_contact, class: 'form-control'%>
+
+
+          <%= f.check_box :marketing_opt, class: 'form-control'%> Send me occasional email updates with news, special promotions, and coupons!
+
+          <%= f.submit "Continue", class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</section>

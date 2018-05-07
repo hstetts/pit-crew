@@ -1,8 +1,7 @@
 
-  <div class="mdl-layout__content">
-
+  <main class="mdl-layout__content">
+  <div class="mdl-layout__tab-panel" id="contact">
     <div class="mdl-layout-spacer"></div>
-
 
 
     <section class="section--center mdl-grid mdl-shadow--2dp">
@@ -17,7 +16,7 @@
         </div>
         <div class="mdl-card__actions">
           <ul>
-            <li>Schedule an appointment</li>
+            <li><%= link_to "Schedule an appointment", new_user_path, :class => 'navbar-link'  %></li>
             <li>Call: RALEIGH/DURHAM   1.844.974.8273</li>
             <li><a href="https://www.facebook.com/Pit-Crew-Oil-1500773540229696/?ref=hl">Facebook</a></li>
             <li>1-844-9-PITCREW</li>
@@ -25,6 +24,10 @@
           </ul>
 
           calendly.com/pitcrewauto
+          <!-- Calendly inline widget begin -->
+          <div class="calendly-inline-widget" data-url="https://calendly.com/pitcrewauto/60min" style="min-width:320px;height:580px;"></div>
+          <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+          <!-- Calendly inline widget end -->
 
         </div>
         <div class="mdl-card__supporting-text">
@@ -35,8 +38,11 @@
         </div>
 
 
+
       </div>
 
     </section>
       <div class="mdl-layout-spacer"></div>
+
   </div>
+</main>

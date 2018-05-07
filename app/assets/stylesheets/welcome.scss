@@ -92,12 +92,7 @@
  .mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
    border-top: 1px solid rgba(0, 0, 0, 0.12);
  }
- .mdl-demo #add {
-   position: absolute;
-   right: 40px;
-   top: 36px;
-   z-index: 999;
- }
+
 
  .mdl-demo .mdl-layout__content section:not(:last-of-type) {
    position: relative;
@@ -192,7 +187,7 @@
  .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
    margin-bottom: 24px;
  }
- .mdl-demo .mdl-layout__tab-panel:not(#overview) {
+ .mdl-demo .mdl-layout__tab-panel:not(#home) {
    background-color: white;
  }
 
