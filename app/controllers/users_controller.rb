@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
+    render_wizard
   end
 
   def create
-    @user = User.new
+    @user = User.new(params[:user])
 
+    @user.first_name = params[:user][:first_name]
     @user.first_name = params[:user][:first_name]
     @user.last_name = params[:user][:last_name]
     @user.phone_number = params[:user][:phone_number]
@@ -22,7 +24,7 @@ class UsersController < ApplicationController
 
     if @user.save
       flash[:success] = "User Added to Database!"
-      redirect_to @user
+      redirect_to multistep_form_path(:customer_validation)
     else
       render 'new'
     end

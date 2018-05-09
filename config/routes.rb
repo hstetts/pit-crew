@@ -1,12 +1,5 @@
 Rails.application.routes.draw do
 
-  root 'welcome#home'
-
-  resources :users, only: [:new, :create]
-
-  resources :multistep_form
-  
-
   get 'welcome/home'
 
   get 'welcome/about'
@@ -16,6 +9,11 @@ Rails.application.routes.draw do
   get 'welcome/contact'
 
   get 'welcome/FAQ'
+
+  resources :users, only: [:new, :create]
+  resources :multistep_form
+
+  root 'welcome#home'
 
 
 end

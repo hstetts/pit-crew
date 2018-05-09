@@ -5,7 +5,7 @@
         <h1 class="mdl-typography--font-light"> New Customer </h1>
 
       <div class="form-group">
-      <%= form_for @user, url: wizard_path do |f| %>
+      <%= form_for @user, url: wizard_path, method: :put do |f| %>
           <%= f.label :email %>
           <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>
 
@@ -16,7 +16,7 @@
           <% end %>
       <% end %>
     </div>
-    <%= link_to 'skip', next_wizard_path %>
+    <%= link_to 'Next', next_wizard_path %>
     </div>
   </div>
 </section>

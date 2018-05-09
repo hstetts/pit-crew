@@ -1,4 +1,4 @@
-class MultistepFormController < Wicked::WizardController
+class MultistepFormController < ApplicationController
   include Wicked::Wizard
 
   steps :customer_validation, :contact_details
@@ -9,8 +9,7 @@ class MultistepFormController < Wicked::WizardController
   end
 
   def update
-    @user = User.new
-    @user = User.update_attributes(params[:user])
+    @user.update_attributes(params[:user])
     render_wizard @user
   end
 
