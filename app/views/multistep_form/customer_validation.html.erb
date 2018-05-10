@@ -1,22 +1,39 @@
 <div class="mdl-layout__content">
-<section class="section--center mdl-grid mdl-shadow--2dp" id:"appointment">
+  <section class="section--center mdl-grid mdl-shadow--2dp" id:"appointment">
+    <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+      <h1 class="mdl-typography--font-light"> New Customer </h1>
 
-      <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-        <h1 class="mdl-typography--font-light"> New Customer </h1>
+        <div class="form-group customer-validation-form">
 
-      <div class="form-group">
-      <%= form_for @user, url: wizard_path, method: :put do |f| %>
-          <%= f.label :email %>
-          <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>
+          <%= form_for @user, url: wizard_path, method: :put do |f| %>
 
-          <%= f.label :existing_customer, class: 'checkbox' do %>
-            <%= f.check_box :existing_customer %> Existing Customer?
+            <div class="form-group">
+              <%= f.label :email %>
+              <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>
+            </div>
 
-          <%= f.submit "Continue", class: 'btn btn-primary' %>
+
+            <div class="form-group">
+              <%= f.label :existing_customer, class: 'checkbox' do %>
+                <%= f.check_box :existing_customer %> I am new to PitCrew.
+              <% end %>
+              <%= f.label :existing_customer, class: 'checkbox' do %>
+                <%= f.check_box :existing_customer %> I have used PitCrew in the past and need to schedule an oil change.
+              <% end %>
+              <%= f.label :existing_customer, class: 'checkbox' do %>
+                <%= f.check_box :existing_customer %> I have used PitCrew in the past but need to register a new vehicle for my next oil change.
+              <% end %>
+            </div>
+
+            <div class="form-group">
+              <%= f.submit "Continue", class: 'btn btn-primary' %>
+            </div>
+
           <% end %>
-      <% end %>
+        </div>
+
+        <%= link_to 'Continue', next_wizard_path %>
     </div>
-    <%= link_to 'Next', next_wizard_path %>
-    </div>
-  </div>
-</section>
+
+  </section>
+</div>

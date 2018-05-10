@@ -9,7 +9,11 @@ class MultistepFormController < ApplicationController
   end
 
   def update
+    @user = current_user
+    case steps
+    when :existing_customer
     @user.update_attributes(params[:user])
+    end
     render_wizard @user
   end
 

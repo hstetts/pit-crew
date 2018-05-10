@@ -8,7 +8,6 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
 
     @user.first_name = params[:user][:first_name]
-    @user.first_name = params[:user][:first_name]
     @user.last_name = params[:user][:last_name]
     @user.phone_number = params[:user][:phone_number]
     @user.phone_type = params[:user][:phone_type]

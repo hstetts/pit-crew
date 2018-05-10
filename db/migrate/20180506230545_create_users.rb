@@ -13,6 +13,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :address_type
       t.string :preferred_contact
       t.boolean :marketing_opt
+      t.boolean :existing_customer, default: false
 
       t.timestamps
     end
