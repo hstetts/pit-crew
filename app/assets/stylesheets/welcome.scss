@@ -9,6 +9,10 @@
    margin: 0;
    padding: 0;
  }
+ .header-bg-image {
+  position: relative;
+  background: url('https://photos-5.dropbox.com/t/2/AACLlWV14IBxcwgYFS6yPcDoigCaYeznchZLKKUEKWLyQQ/12/83168306/png/32x32/1/_/1/2/header-bg.png/EN7w3kAYsgIgAigC/98YJsoZQoSMzd-PrXUCTNlos0wQ9fo0pci7fR6bXjI0?preserve_transparency=1&size=1280x960&size_mode=3') center / cover;
+ }
  .mdl-demo .mdl-layout__header-row {
    padding-left: 40px;
  }
@@ -77,11 +81,11 @@
  }
  .mdl-demo .mdl-card__actions {
    margin: 0;
-   padding: 4px 40px;
+   padding: 4px 30px;
    color: inherit;
  }
  .mdl-demo .mdl-card__actions a {
-   color: red;
+   color: #c52d29;
    margin: 0;
  }
  .mdl-demo .mdl-card__actions a:hover,
@@ -92,7 +96,6 @@
  .mdl-demo .mdl-card__supporting-text + .mdl-card__actions {
    border-top: 1px solid rgba(0, 0, 0, 0.12);
  }
-
 
  .mdl-demo .mdl-layout__content section:not(:last-of-type) {
    position: relative;
@@ -185,7 +188,7 @@
    border-bottom: 1px solid rgba(0,0,0,.13);
  }
  .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
-   margin-bottom: 24px;
+   margin-bottom: 22px;
  }
  .mdl-demo .mdl-layout__tab-panel:not(#home) {
    background-color: white;

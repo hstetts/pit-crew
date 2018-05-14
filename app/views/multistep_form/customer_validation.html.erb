@@ -1,39 +1,17 @@
-<div class="mdl-layout__content">
+<main class="mdl-layout__content">
   <section class="section--center mdl-grid mdl-shadow--2dp" id:"appointment">
-    <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-      <h1 class="mdl-typography--font-light"> New Customer </h1>
 
-        <div class="form-group customer-validation-form">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPl9GNHiAY1nzlfXB3dzFEcFc8Z3YX_6fxDoKh9yU0kaB4kw/viewform?embedded=true" width="700" height="780" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
-          <%= form_for @user, url: wizard_path, method: :put do |f| %>
+    </section>
 
-            <div class="form-group">
-              <%= f.label :email %>
-              <%= f.text_field :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>
-            </div>
-
-
-            <div class="form-group">
-              <%= f.label :existing_customer, class: 'checkbox' do %>
-                <%= f.check_box :existing_customer %> I am new to PitCrew.
-              <% end %>
-              <%= f.label :existing_customer, class: 'checkbox' do %>
-                <%= f.check_box :existing_customer %> I have used PitCrew in the past and need to schedule an oil change.
-              <% end %>
-              <%= f.label :existing_customer, class: 'checkbox' do %>
-                <%= f.check_box :existing_customer %> I have used PitCrew in the past but need to register a new vehicle for my next oil change.
-              <% end %>
-            </div>
-
-            <div class="form-group">
-              <%= f.submit "Continue", class: 'btn btn-primary' %>
-            </div>
-
-          <% end %>
+    <section class="section--footer mdl-color--white mdl-grid mdl-shadow--3dp">
+        <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
+            <p> Once the form above is complete and you have received the confirmation of submission message, click continue to select an appointment time. </p>
+          <div class="button-group">
+            <%= link_to 'Continue', next_wizard_path, :class=>'btn btn-primary' %>
+          </div>
         </div>
+    </section>
 
-        <%= link_to 'Continue', next_wizard_path %>
-    </div>
-
-  </section>
-</div>
+</main>

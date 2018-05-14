@@ -40,7 +40,10 @@
 
           <%= f.check_box :marketing_opt, class: 'form-control'%> Send me occasional email updates with news, special promotions, and coupons!
 
-          <%= f.submit "Continue", class: 'btn btn-primary' %>
+          
+          <div class="form-group">
+            <%= link_to 'Continue', next_wizard_path, :class=>'btn btn-primary' %>
+          </div>
       <% end %>
     </div>
     </div>

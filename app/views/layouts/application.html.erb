@@ -9,18 +9,14 @@
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
-
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Material Design Lite">
   <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
-
   <!-- Tile icon for Win8 (144x144 + tile color) -->
   <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
   <meta name="msapplication-TileColor" content="#3372DF">
-
 
 
   <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
@@ -33,48 +29,49 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-red.min.css" />
-  </head>
+</head>
 
-  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-      </div>
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-        <img src="https://photos-6.dropbox.com/t/2/AAAS7q4rp4NG0L3Rnw87sysIMBUu8OjQGCTITTswnp_6zw/12/83168306/png/32x32/1/_/1/2/Header_Icon.png/EN7w3kAYsQIgAigC/vx8ad_QFaSTb0emfreoBlsaQkx3Gi07TVnROtFOOboI?preserve_transparency=1&size=1280x960&size_mode=3" alt="Logo" height="40" width="90" />
-        <h1>  Pit Crew Oil Change</h1>
-      </div>
-      <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-      </div>
-      <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-        <ul class="nav nav-tabs">
-          <li><%= link_to "Home", welcome_home_path, id:"home", class:"mdl-layout__tab is-active" %></li>
-          <li><%= link_to "About", welcome_about_path, id:"about", class:"mdl-layout__tab" %></li>
-          <li><%= link_to "Services & Pricing", welcome_services_path, id:"servicespricing", class:"mdl-layout__tab" %></li>
-          <li><%= link_to "Schedule Appointment", multistep_form_path(:customer_validation), id:"appointment", class:"mdl-layout__tab" %></li>
-          <li><%= link_to "Contact", welcome_contact_path, id:"contact", class:"mdl-layout__tab" %></li>
-          <li><%= link_to "FAQ", welcome_FAQ_path, id:"FAQ", class:"mdl-layout__tab" %></li>
-        </ul>
-      </div>
-    </header>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll header-bg-image">
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
 
-    <%= yield %>
+      <%= image_tag("Header_Icon.png", alt: 'Header Icon')%>
+      <h1>  Pit Crew Oil Change</h1>
+    </div>
+    <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    </div>
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+      <ul class="nav nav-tabs">
+        <li><%= link_to "Home", welcome_home_path, id:"home", class:"mdl-layout__tab is-active" %></li>
+        <li><%= link_to "About", welcome_about_path, id:"about", class:"mdl-layout__tab" %></li>
+        <li><%= link_to "Services & Pricing", welcome_services_path, id:"servicespricing", class:"mdl-layout__tab" %></li>
+        <li><%= link_to "Schedule Appointment", multistep_form_path(:customer_validation), id:"appointment", class:"mdl-layout__tab" %></li>
+        <li><%= link_to "Contact", welcome_contact_path, id:"contact", class:"mdl-layout__tab" %></li>
+        <li><%= link_to "FAQ", welcome_FAQ_path, id:"FAQ", class:"mdl-layout__tab" %></li>
+      </ul>
+    </div>
+  </header>
 
-  <footer class="mdl-mega-footer">
-      <div class="mdl-mega-footer--drop-down-section">
-        <h1 class="mdl-mega-footer--heading">FAQ</h1>
-        <ul class="mdl-mega-footer--link-list">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Answers</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-        <p>
-          More Information
-          RALEIGH/DURHAM   1.844.974.8273
-        </p>
-      </div>
-  </footer>
+  <%= yield %>
 
-  </div>
+<footer class="mdl-mega-footer">
+    <div class="mdl-mega-footer--drop-down-section">
+      <h1 class="mdl-mega-footer--heading">FAQ</h1>
+      <ul class="mdl-mega-footer--link-list">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Answers</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <p>
+        More Information
+        RALEIGH/DURHAM   1.844.974.8273
+      </p>
+    </div>
+</footer>
+
+</div>
 </body>
 </html>
