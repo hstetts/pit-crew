@@ -48,7 +48,7 @@
         <li><%= link_to "Home", welcome_home_path, id:"home", class:"mdl-layout__tab is-active" %></li>
         <li><%= link_to "About", welcome_about_path, id:"about", class:"mdl-layout__tab" %></li>
         <li><%= link_to "Services & Pricing", welcome_services_path, id:"servicespricing", class:"mdl-layout__tab" %></li>
-        <li><%= link_to "Schedule Appointment", multistep_form_path(:customer_validation), id:"appointment", class:"mdl-layout__tab" %></li>
+        <li><%= link_to "Schedule Appointment", appointment_path(:customer_validation), id:"appointment_form", class:"mdl-layout__tab" %></li>
         <li><%= link_to "Contact", welcome_contact_path, id:"contact", class:"mdl-layout__tab" %></li>
         <li><%= link_to "FAQ", welcome_FAQ_path, id:"FAQ", class:"mdl-layout__tab" %></li>
       </ul>
