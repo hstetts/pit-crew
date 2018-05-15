@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get 'welcome/home'
 
   get 'welcome/about'
@@ -10,8 +9,7 @@ Rails.application.routes.draw do
 
   get 'welcome/FAQ'
 
-  resources :users, only: [:new, :create]
-  resources :multistep_form
+  resources :appointment
 
   root 'welcome#home'
 
