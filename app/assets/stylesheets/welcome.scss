@@ -9,16 +9,23 @@
    margin: 0;
    padding: 0;
  }
+
  .header-bg-image {
   position: relative;
-  background: url('https://photos-5.dropbox.com/t/2/AACLlWV14IBxcwgYFS6yPcDoigCaYeznchZLKKUEKWLyQQ/12/83168306/png/32x32/1/_/1/2/header-bg.png/EN7w3kAYsgIgAigC/98YJsoZQoSMzd-PrXUCTNlos0wQ9fo0pci7fR6bXjI0?preserve_transparency=1&size=1280x960&size_mode=3') center / cover;
+  background: url('https://photos-3.dropbox.com/t/2/AAAU7czyPTvlmovSmWuVU8Y7tpwhQQVEnRgewgy5epF7Kw/12/83168306/jpeg/32x32/1/_/1/2/bg-header-img.jpg/EN7w3kAYtAIgAigC/N2gtG5cxtjersjN-kFdJq__L_CoMYMXMTfUtqIWx9g4?size=1280x960&size_mode=3') center / cover;
+
  }
  .mdl-demo .mdl-layout__header-row {
-   padding-left: 40px;
+   padding-left: 15px;
  }
+
  .mdl-demo .mdl-layout__header-row h1 {
-   padding-left: 40px;
+   color: hsla(0, 0%, 100%, 0.7);
+   font-weight: lighter;
+   font-size: 2.3rem;
+
  }
+
  .mdl-demo .mdl-layout.is-small-screen .mdl-layout__header-row h3 {
    font-size: inherit;
  }
@@ -33,7 +40,8 @@
    overflow: visible;
  }
  .mdl-demo .mdl-layout__tab-bar-container {
-   height: 64px;
+   padding-top: 8px;
+   height: 74px;
  }
  .mdl-demo .mdl-layout__tab-bar {
    padding: 0;
@@ -43,12 +51,12 @@
    width: 100%;
  }
  .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
-   height: 64px;
-   line-height: 64px;
+   height: 62px;
+   line-height: 68px;
  }
  .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-   background-color: white;
-   height: 4px;
+   background-color: #a09f9f;
+   height: 8px;
  }
  .mdl-demo main > .mdl-layout__tab-panel {
    padding: 8px;
@@ -224,8 +232,30 @@
  .mdl-typography--font-light {
    margin: 60px;
   }
- // .mdl-mega-footer {
- //   bottom: 0;
- //   width: 100%;
- //   position: fixed;
- // }
+
+  .content-grid {
+  max-width: 1000px;
+  }
+
+  .contact-page > .mdl-cell {
+    padding: 40px;
+  }
+
+  .coverage--cell {
+    background-color: #ad2825a1;
+  }
+
+  .mdl-cell--4-col > h3 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .mdl-cell--8-col > .coverage-image {
+    background: url('https://photos-1.dropbox.com/t/2/AAAe_GNhBl76XUuCu3M34ua3qIoHc3e9RCmzqYrIOoh3pA/12/83168306/png/32x32/1/_/1/2/coverage.png/EN7w3kAYswIgAigC/y0iZfEaeGjY5HcYwoBEX5r-cpYuLuno82NIkRewBzYU?preserve_transparency=1&size=1600x1200&size_mode=3') center;
+    border: solid 5px #ffffff;
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+  }
+  .mdl-cell--8-col > h3 {
+    font-size: 50px;
+  }
