@@ -39,8 +39,6 @@ gem 'bootstrap-sass'
 
 gem 'material_design_lite-sass'
 
-gem 'calendly', git: 'git@github.com:nurdymuny/calendly-ruby.git'
-
 gem 'wicked'
 
 gem "reform-rails"
