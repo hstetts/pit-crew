@@ -12,7 +12,7 @@
 
  .header-bg-image {
   position: relative;
-  background: url('https://photos-3.dropbox.com/t/2/AAAU7czyPTvlmovSmWuVU8Y7tpwhQQVEnRgewgy5epF7Kw/12/83168306/jpeg/32x32/1/_/1/2/bg-header-img.jpg/EN7w3kAYtAIgAigC/N2gtG5cxtjersjN-kFdJq__L_CoMYMXMTfUtqIWx9g4?size=1280x960&size_mode=3') center / cover;
+  background: url('bg-header-img.png') center / cover;
 
  }
  .mdl-demo .mdl-layout__header-row {
@@ -31,6 +31,7 @@
  }
  .mdl-demo .mdl-layout__tab-bar-button {
    display: none;
+
  }
  .mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
    display: none;
@@ -53,11 +54,19 @@
  .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab {
    height: 62px;
    line-height: 68px;
+   color: #f8f7f7;
  }
+ .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab:hover {
+   background-color: #f8f7f7;
+   color: inherit;
+ }
+
  .mdl-demo .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
    background-color: #a09f9f;
    height: 8px;
  }
+
+
  .mdl-demo main > .mdl-layout__tab-panel {
    padding: 8px;
    padding-top: 48px;
@@ -250,7 +259,7 @@
     font-size: 50px;
   }
   .mdl-cell--8-col > .coverage-image {
-    background: url('https://photos-1.dropbox.com/t/2/AAAe_GNhBl76XUuCu3M34ua3qIoHc3e9RCmzqYrIOoh3pA/12/83168306/png/32x32/1/_/1/2/coverage.png/EN7w3kAYswIgAigC/y0iZfEaeGjY5HcYwoBEX5r-cpYuLuno82NIkRewBzYU?preserve_transparency=1&size=1600x1200&size_mode=3') center;
+    background: url('coverage.png') center;
     border: solid 5px #ffffff;
     height: 400px;
     width: 600px;
