@@ -41,15 +41,15 @@
     </div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
     <div class="mdl-layout--large-screen-only mdl-layout__header-row"></div>
-    <div class="mdl-layout__tab-bar-container mdl-cell--4-col-phone">
-    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-cell--4-col-phone">
-      <ul class="nav nav-tabs mdl-cell--4-col-phone">
-        <li><%= link_to "Home", welcome_home_path, id:"home", class:"mdl-layout__tab is-active" %></li>
-        <li><%= link_to "About", welcome_about_path, id:"about", class:"mdl-layout__tab" %></li>
-        <li><%= link_to "Services & Pricing", welcome_services_path, id:"servicespricing", class:"mdl-layout__tab" %></li>
-        <li><%= link_to "Schedule Appointment", appointment_path(:customer_validation), id:"appointment_form", class:"mdl-layout__tab" %></li>
-        <li><%= link_to "Contact", welcome_contact_path, id:"contact", class:"mdl-layout__tab" %></li>
-        <li><%= link_to "FAQ", welcome_FAQ_path, id:"FAQ", class:"mdl-layout__tab" %></li>
+    <div class="mdl-layout__tab-bar-container">
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+      <ul class="mdl-navigation">
+        <%= link_to "Home", welcome_home_path, id:"home", class:"mdl-layout__tab is-active" %>
+        <%= link_to "About", welcome_about_path, id:"about", class:"mdl-layout__tab" %>
+        <%= link_to "Services & Pricing", welcome_services_path, id:"servicespricing", class:"mdl-layout__tab" %>
+        <%= link_to "Schedule Appointment", appointment_path(:customer_validation), id:"appointment_form", class:"mdl-layout__tab" %>
+        <%= link_to "Contact", welcome_contact_path, id:"contact", class:"mdl-layout__tab" %>
+        <%= link_to "FAQ", welcome_FAQ_path, id:"FAQ", class:"mdl-layout__tab" %>
       </ul>
     </div>
   </div>
