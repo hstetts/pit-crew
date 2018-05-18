@@ -12,7 +12,7 @@
 
  .header-bg-image {
   position: relative;
-  background: url('bg-header-img.png') center / cover;
+  background: image_url('bg-header-img.png') center / cover;
 
  }
  .mdl-demo .mdl-layout__header-row {
@@ -259,7 +259,7 @@
     font-size: 50px;
   }
   .mdl-cell--8-col > .coverage-image {
-    background: url('coverage.png') center;
+    background: image_url('coverage.png') center;
     border: solid 5px #ffffff;
     height: 400px;
     width: 600px;
