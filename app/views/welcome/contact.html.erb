@@ -3,9 +3,9 @@
     <div class="mdl-layout-spacer"></div>
 
 
-        <div class="content-grid mdl-grid">
+        <div class="content-grid mdl-grid mdl-cell--4-col-phone">
 
-          <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--1dp mdl-color--grey-200">
+          <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--1dp mdl-color--grey-200 mdl-cell--4-col-phone">
             <div class="mdl-card__title">
               <h3 class="mdl-typography--font-light"> Contact: </h3>
               </div>
@@ -30,12 +30,14 @@
                 </div>
 
           </div>
-          <div class="mdl-card mdl-cell mdl-cell--8-col mdl-shadow--4dp coverage--cell">
+          <div class="coverage--cell mdl-card mdl-cell mdl-cell--8-col mdl-shadow--4dp mdl-cell--4-col-phone">
             <div class="mdl-card__title">
               <h3 class="mdl-typography--font-light"> Coverage: </h3>
             </div>
-            <div class="coverage-image mdl-shadow--2dp mdl-cell--2-col-phone">
+            <div class="coverage-image mdl-shadow--2dp">
+              <%= image_tag("coverage.png", alt: 'Coverage Map', :class => "map_image mdl-cell--4-col-phone")%>
             </div>
+            <div><br></br></div>
           </div>
 
         </div>

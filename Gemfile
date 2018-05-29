@@ -43,6 +43,8 @@ gem 'wicked'
 
 gem "reform-rails"
 
+gem 'materialize-sass', '~> 1.0.0.rc1'
+
 group :development do
  gem 'listen', '~> 3.0.5'
 end
