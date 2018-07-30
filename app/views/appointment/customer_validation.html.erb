@@ -1,17 +1,14 @@
 <main class="mdl-layout__content">
   <section class="section--center mdl-grid mdl-shadow--2dp" id:"appointment_form">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPl9GNHiAY1nzlfXB3dzFEcFc8Z3YX_6fxDoKh9yU0kaB4kw/viewform?usp=sf_link" width="700" height="780" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </section>
 
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfPl9GNHiAY1nzlfXB3dzFEcFc8Z3YX_6fxDoKh9yU0kaB4kw/viewform?embedded=true" width="700" height="780" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  <section class="section--center mdl-grid continue-section">
+    <p> Once the form above is complete and note a confirmation message, click to schedule an appointment time with us: </p>
 
-    </section>
-
-    <section class="section--footer mdl-color--white mdl-grid mdl-shadow--3dp">
-        <div class="section__text mdl-cell mdl-cell--4-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-            <p> Once the form above is complete and you have received the confirmation of submission message, click continue to select an appointment time. </p>
-          <div class="button-group">
-            <%= link_to 'Continue', next_wizard_path, :class=>'btn btn-primary' %>
-          </div>
-        </div>
-    </section>
+    <div class="button-group">
+      <%= link_to 'Schedule Appointment', next_wizard_path, :class=>'mdl-button mdl-js-button mdl-button--raised', :style => "width: 280px; height: 40px; min-width: initial;" %>
+    </div>
+  </section>
 
 </main>
